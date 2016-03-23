@@ -12,6 +12,18 @@ class ReportsController < ApplicationController
   def search_view
   end
 
+  def csv_upload
+  end
+
+  def csv_success
+    @rows = []
+    CSV.open(params['csv_file'].tempfile, headers: true) do |c|
+      c.each do |line|
+        @rows << line['Assembly Name']
+      end
+    end
+  end
+
   def search
     @name = params[:search]
     @start_time = Time.now

@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   get 'search' => 'reports#search_view'
   post 'search' => 'reports#search'
 
+  get 'upload' => 'reports#csv_upload'
+  post 'upload' => 'reports#csv_success'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
