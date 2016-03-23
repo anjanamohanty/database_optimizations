@@ -18,7 +18,7 @@ class ReportsController < ApplicationController
   end
 
   def csv_success
-    UploadCsvJob.perform_later(params['csv_file'].read)
+    UploadCsvJob.perform_later(params['csv_file'].path)
   end
 
   def search
