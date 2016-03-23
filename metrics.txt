@@ -1,0 +1,37 @@
+== Adding indices ==
+
+AddIndexToAssemblies: migrated (0.0014s)
+AddIndexToHits: migrated (1.3244s)
+AddIndexToGenes: migrated (0.4337s)
+AddIndexToSequences: migrated (0.0209s)
+
+
+== Post indices ==
+
+Total: 13.79 s
+694.0 msLoading
+254.6 msScripting
+9544.9 msRendering
+73.8 msPainting
+681.5 msOther
+2541.6 msIdle
+
+Total time before HTML is generated: 13.007351 s
+Memory used before HTML is generated: 399 MB
+
+Total time before HTML is generated: 14.44099 s
+Memory used after HTML is generated: 408 MB
+
+
+== Post controller updates ==
+
+Total: 211.23 ms
+1.0 msScripting
+167.9 msOther
+42.3 msIdle
+
+Total time before HTML is generated: 0.024368 s
+Memory used before HTML is generated: 200 MB
+
+Total time before HTML is generated: 13.135324 s
+Memory used after HTML is generated: 225 MB
