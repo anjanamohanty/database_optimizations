@@ -13,5 +13,7 @@ class MakeReportJob < ActiveJob::Base
         csv << [h.match_gene_name, h.match_gene_dna, h.percent_similarity]
       end
     end
+
+    ReportMailer.send_name_report.deliver_now
   end
 end
