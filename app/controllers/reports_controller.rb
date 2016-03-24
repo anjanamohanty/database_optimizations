@@ -9,8 +9,9 @@ class ReportsController < ApplicationController
     @assembly = Assembly.find_by_name(params[:name])
     @hits = @assembly.hits.order(percent_similarity: :desc)
     @memory_used = memory_in_mb
+    email = params[:email]
 
-    MakeReportJob.perform_later(@name)
+    MakeReportJob.perform_later(@name, email)
   end
 
   def search_view

@@ -17,6 +17,6 @@ class MakeReportJob < ActiveJob::Base
       end
     end
 
-    ReportMailer.send_name_report("anjana.j.mohanty@gmail.com", file_path).deliver_now
+    ReportMailer.send_name_report(args[1], file_path).deliver_now
   end
 end
