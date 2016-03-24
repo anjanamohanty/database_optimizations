@@ -5,9 +5,10 @@ class ReportMailer < ApplicationMailer
   #
   #   en.report_mailer.send_name_report.subject
   #
-  def send_name_report
+  def send_name_report(email, attachment_path)
     @greeting = "Hi"
 
-    mail to: "anjana.j.mohanty@gmail.com"
+    attachments['report.csv'] = File.read(attachment_path)
+    mail to: email
   end
 end
